@@ -37,7 +37,7 @@
         <div id="FlickerResult" class="result-box"></div>
     </div>
 
-    <!-- 系统设置弹窗 -->
+    <!-- 设置弹窗 -->
     <div id="mask" class="modal-mask"></div>
     <div id="settingsModal" class="settings-modal">
         <div class="modal-header">
@@ -65,44 +65,8 @@
         </div>
     </div>
 
-    <!-- 代码预览弹窗 -->
-    <div id="codePreviewModal" class="settings-modal">
-        <div class="modal-header">
-            <h2>📁 源代码预览</h2>
-            <div class="download-header">
-                <button class="download-option-btn" onclick="showDownloadOptions()">⭳ 下载</button>
-                <span class="close-btn" onclick="closeCodePreview()">&times;</span>
-            </div>
-        </div>
-        <div class="modal-body code-preview">
-            <div class="file-tree" id="fileTree"></div>
-            <pre class="code-content" id="codeContent"></pre>
-        </div>
-    </div>
-
-    <!-- 下载选项弹窗 -->
-    <div id="downloadOptionsModal" class="settings-modal small-modal">
-        <div class="modal-header">
-            <h2>选择下载方式</h2>
-            <span class="close-btn" onclick="closeDownloadOptions()">&times;</span>
-        </div>
-        <div class="modal-body">
-            <button class="download-type-btn recommend" onclick="downloadAsZip()">
-                📦 压缩包下载
-                <div class="hint">单个文件方便传输</div>
-            </button>
-            <button class="download-type-btn" onclick="downloadAsFolder()">
-                📂 文件夹下载（推荐）
-                <div class="hint">直接保存到本地文件夹</div>
-            </button>
-        </div>
-    </div>
-
-    <!-- 依赖库 -->
+    <!-- 引入JSZip库 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    
-    <!-- 本地脚本 -->
     <script src="DrawStudentID.js"></script>
     <script src="Setting.js"></script>
 </body>
